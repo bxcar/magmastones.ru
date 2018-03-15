@@ -1,0 +1,333 @@
+/* Large Devices, Wide Screens */
+@media only screen and (max-width: 1199px) {
+  .header .bottom-panel .menu-top li {
+    padding-left: 4px; }
+  .catalog-section .col-lg-3,
+  .catalog-section .col-lg-9,
+  .project-section .col-lg-3,
+  .project-section .col-lg-9,
+  .project-inset-section .col-lg-3,
+  .project-inset-section .col-lg-9 {
+    width: 100%; }
+  .catalog-section .btn.tofilter,
+  .project-section .btn.toproject,
+  .project-inset-section .btn.toproject {
+    display: block;
+    margin-left: auto;
+    margin-right: auto; }
+  .filter-goods,
+  .project-goods {
+    display: none; }
+  .catalog-section .filter-goods,
+  .project-section .project-goods,
+  .project-inset-section .project-goods {
+    width: 85%;
+    margin-left: auto;
+    margin-right: auto; }
+  .project-inset-section .col-lg-3 {
+    float: inherit; }
+  .project-inset-section .col-lg-9 {
+    padding-right: 15px; }
+  /*________PAGE CONTACT________*/
+  /*________.contact-section________*/
+  .contact-section .col-lg-7 {
+    padding-left: 15px; }
+	
+	.header .top-panel .network-box {display: none;}
+	.header .top-panel address, .header .top-panel span {font-size: 14px;}
+	.header .top-panel .container {width: 100%;}
+	
+	}
+
+@media only screen and (max-width: 1050px) {
+	.header .bottom-panel {padding-top: 60px;}
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width: 991px) {
+  .hamburger {
+    display: block; }
+  .header .bottom-panel .menu-top {
+    padding: 20px 0;
+    display: none;
+    position: absolute;
+    min-width: 100%;
+    padding: 20px;
+    height: 100vh;
+    background: #fff;
+    left: 0;
+    margin-left: -15px;
+    top: 100%;
+    z-index: 9999; }
+    .header .bottom-panel .menu-top ul {
+      width: 720px;
+      margin-left: auto;
+      margin-right: auto; }
+    .header .bottom-panel .menu-top li {
+      display: block;
+      padding: 10px 0;
+      font-size: 19px; }
+      .header .bottom-panel .menu-top li a {
+        line-height: normal; }
+  .header .bottom-panel .menu-top li > ul {
+    display: block;
+    position: relative;
+    padding-left: 20px; }
+    .header .bottom-panel .menu-top li > ul li {
+      display: block; }
+  .header .bottom-panel .menu-top li > ul li:last-child {
+    padding-bottom: 0; }
+  .header .bottom-panel .menu-top .to-has-child:before {
+    display: none; }
+  .header .bottom-panel {
+    padding: 45px 0 10px 0; }
+  .footer .menu-footer ul {
+    -webkit-column-count: 2;
+       -moz-column-count: 2;
+            column-count: 2; }
+  .footer .top-panel {
+    margin: 15px 0; }
+    .footer .top-panel .title, .footer .top-panel .footer-contact, .footer .top-panel .schedule {
+      font-size: 20px; }
+  .project-section .default-shell .view-box:nth-child(3n) .inset-box {
+    border-right: none; }
+  /*________SECTION .slider-main-page________*/
+  .slider-main-page .slide {
+    padding: 110px 0 155px 0;
+    height: auto; }
+  .slider-main-page .slide-description {
+    max-width: 700px; }
+  .default-shell {
+    padding-top: 0; }
+  .default-shell .view-box,
+  .default-shell.md-size .view-box {
+    width: 273px; }
+  .default-shell {
+    text-align: center; }
+  .default-shell .view-box:nth-child(2n) .inset-box {
+    border-right: solid 1px #a4a4a4; }
+  .default-shell .view-box:hover:nth-child(2n) .inset-box {
+    border-right: none; }
+  /*________PAGE GOODS________*/
+  /*________SECTION .goods-section PAGE GOODS________*/
+  .goods-section .inform-goods .foto {
+    margin-left: auto;
+    margin-right: auto; }
+  .goods-section .inform-goods .description-goods {
+    text-align: center; }
+    .goods-section .inform-goods .description-goods .text {
+      text-align: left; }
+  /*________PAGE BlOG________*/
+  /*________.blog-section________*/
+  .blog-section .shell article .txt {
+    -webkit-column-count: 1;
+       -moz-column-count: 1;
+            column-count: 1; }
+  .blog-detailed-section .btn {
+    width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block; }
+  .about-section .shell article .pic {
+    height: 380px; }
+  .about-section .shell article .txt {
+    -webkit-column-count: 1;
+       -moz-column-count: 1;
+            column-count: 1; }
+  .production-section .shell article .txt {
+    -webkit-column-count: 1;
+       -moz-column-count: 1;
+            column-count: 1; }
+  .production-section .img-colum {
+    text-align: center; }
+    .production-section .img-colum .view {
+      max-width: 265px;
+      margin: 0 10px; }
+      .production-section .img-colum .view:nth-child(2) {
+        float: none; }
+  /*________PAGE CONTACT________*/
+  /*________.contact-section________*/
+  .map {
+    height: 400px; } 
+	
+	.header .top-panel .contact-inform .btn {display: none;}
+	
+	}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width: 767px) {
+	#header-feedback {display: none;}
+  h1 {
+    font-size: 23px; }
+  h2 {
+    font-size: 23px; }
+  .info-goods-section {
+    padding: 30px 0; }
+  .header .top-panel .mailto,
+  .header .form-group {
+    display: none; }
+  .header .top-panel .call-box,
+  .header .top-panel .network-box {
+    text-align: center;
+    display: block;
+    margin-left: 0; }
+  .hamburger {
+    left: inherit;
+    right: 0; }
+  .footer .top-panel {
+    text-align: center; }
+    .footer .top-panel .title {
+      text-align: center; }
+    .footer .top-panel .schedule {
+      margin-left: auto;
+      margin-right: auto; }
+  .footer .bottom-panel {
+    padding-top: 30px;
+    text-align: center; }
+    .footer .bottom-panel .logo-footer img {
+      max-width: 150px; }
+    .footer .bottom-panel .menu-footer ul {
+      margin-top: 10px;
+      -webkit-column-count: 1;
+         -moz-column-count: 1;
+              column-count: 1; }
+      .footer .bottom-panel .menu-footer ul li {
+        display: inline-block;
+        padding-left: 10px; }
+    .footer .bottom-panel .order-call-item {
+      margin-left: auto;
+      margin-right: auto; }
+  .footer .menu-footer {
+    margin-left: 0; }
+  .slider-main-page .slide-description {
+    padding: 30px 10px 37px 10px; }
+  .slider-main-page .slide-description {
+    max-width: 95%; }
+  .info-goods-section p {
+    -webkit-column-count: 1;
+       -moz-column-count: 1;
+            column-count: 1; }
+  /*________SECTION .default-shell________*/
+  .title h2 {
+    padding-bottom: 30px; }
+  .title .link-next {
+    right: 0;
+    top: inherit;
+    bottom: 4px; }
+  .panel-list-goods li {
+    display: block; }
+    .panel-list-goods li a {
+      min-width: 100%;
+      font-size: 17px;
+      padding: 9px 0; }
+  .project-section .default-shell .view-box:nth-child(3n) .inset-box {
+    border-right: solid 1px #a4a4a4; }
+  /*________PAGE project-inset________*/
+  /*________.project-inset-section________*/
+  .project-inset-section .shell .view-foto-project .view {
+    width: 100%; }
+  .project-inset-section .shell .item {
+    margin: 10px !important; }
+  .project-inset-section .shell .view-foto-project .view:nth-child(2) .item:nth-child(2n+1),
+  .project-inset-section .shell .view-foto-project .view:nth-child(2) .item:nth-child(2n),
+  .project-inset-section .shell .view-foto-project .view:nth-child(1) .item {
+    height: 450px; } }
+
+@media only screen and (max-width: 650px) {
+  .default-shell .view-box {
+    display: block;
+    margin: 10px auto; }
+    .default-shell .view-box .inset-box {
+      border-left: solid 1px #a4a4a4;
+      border-right: solid 1px #a4a4a4; } }
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width: 479px) {
+  h1 {
+    padding: 15px 0; }
+  h3 {
+    font-size: 20px;
+    padding-bottom: 15px; }
+  .header .top-panel .call-box .order-call {
+    display: block;
+    margin: 10px 0; }
+  .pagination li {
+    padding: 0; }
+  .slider-main-page .slide {
+    padding: 40px 0 40px 0; }
+  .slick-dots {
+    bottom: 4px; }
+  .slider-main-page .slide-description {
+    padding: 15px 10px 37px 10px; }
+  .catalog-section .filter-goods,
+  .project-section .project-goods,
+  .project-inset-section .project-goods {
+    width: 95%; }
+  /*________SECTION .search-section-link________*/
+  .item-link {
+    text-align: center; }
+  .advantages-company-section .item .text, .advantages-company-section .item .icon {
+    display: block; }
+  .advantages-company-section .item .icon {
+    margin-left: auto;
+    margin-right: auto; }
+  .advantages-company-section .item .text {
+    width: 100%;
+    text-align: center; }
+  .catalog-section .filter-goods {
+    width: 100%; }
+  .production-section .img-colum .view {
+    margin: 0; }
+
+  .modal-wrap {
+    width: 100%; }
+  .contact-form {
+    width: 100%;
+    padding: 25px 20px; }
+  .project-inset-section .shell .view-foto-project .view:nth-child(2) .item:nth-child(2n+1),
+  .project-inset-section .shell .view-foto-project .view:nth-child(2) .item:nth-child(2n),
+  .project-inset-section .shell .view-foto-project .view:nth-child(1) .item {
+    height: 250px; } }
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width: 320px) {
+  /**/ }
+
+/*==========  Mobile First  ==========*/
+/* Custom, iPhone Retina */
+@media only screen and (min-width: 320px) {
+  /**/ }
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width: 480px) {
+  /**/ }
+
+/* Small Devices, Tablets */
+@media only screen and (min-width: 768px) {
+  /**/ }
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width: 992px) {
+  .header .bottom-panel .menu-top li > ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    width: 200px;
+    background: #fff;
+    border-top: solid 7px #373d45;
+    padding: 25px 23px 15px 23px;
+    z-index: 9999999;
+    -webkit-box-shadow: 0px 2px 11px 0px rgba(0,0,0,0.3);
+        -moz-box-shadow: 0px 2px 11px 0px rgba(0,0,0,0.3);
+        box-shadow: 0px 2px 11px 0px rgba(0,0,0,0.3); }
+    .header .bottom-panel .menu-top li > ul li {
+      display: block;
+      padding-left: 0;
+      padding-bottom: 15px; }
+      .header .bottom-panel .menu-top li > ul li a {
+        font-size: 14px;
+        line-height: 21px; } }
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width: 1200px) {
+  /**/ }
