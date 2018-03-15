@@ -4,4 +4,5 @@
 
 # But not these files...
 !.gitignore
-!/wp-content/themes/magma_theme/*
+!wp-content/themes/magma_theme/
+!wp-content/themes/magma_theme/*
