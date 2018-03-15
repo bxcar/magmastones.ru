@@ -1,0 +1,7 @@
+# Created by .ignore support plugin (hsz.mobi)
+# Ignore everything
+*
+
+# But not these files...
+!.gitignore
+!/wp-content/themes/magma_theme/*
