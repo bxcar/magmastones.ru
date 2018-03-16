@@ -1,0 +1,31 @@
+User-agent: *
+ Disallow: /cgi-bin                 
+ Disallow: /wp-admin
+ Disallow: /wp-includes              
+ Disallow: /wp-content/plugins      
+ Disallow: /wp-content/cache
+ Disallow: /wp-content/themes       
+ Disallow: /wp-trackback
+ Disallow: /wp-feed
+ Disallow: /wp-comments
+ Disallow: /tag
+ Disallow: */trackback
+ Disallow: */feed
+ Disallow: */comments
+
+User-agent: Yandex
+ Disallow: /cgi-bin
+ Disallow: /wp-admin
+ Disallow: /wp-includes
+ Disallow: /wp-content/plugins
+ Disallow: /wp-content/cache
+ Disallow: /wp-content/themes
+ Disallow: /wp-trackback
+ Disallow: /wp-feed
+ Disallow: /wp-comments
+ Disallow: /tag
+ Disallow: */trackback
+ Disallow: */feed
+ Disallow: */comments
+ Host: magmastones.ru
+ Sitemap: http://magmastones.ru/sitemap.xml

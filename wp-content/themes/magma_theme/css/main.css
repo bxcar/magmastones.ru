@@ -35,8 +35,8 @@ ol, ul {
 
 * {
   -webkit-box-sizing: border-box;
-          box-sizing: border-box; 
-          
+          box-sizing: border-box;
+
                     }
 
 h1, h2, h3, h4 {
@@ -262,8 +262,8 @@ textarea::-webkit-input-placeholder {
     padding-bottom: 9px;
     padding-left: 0px;
 	font-size: 14px;
-    
-    
+
+
   color: #fff;
       position: fixed;
     width: 100%;
@@ -276,8 +276,8 @@ textarea::-webkit-input-placeholder {
 
      padding-top: 5px;
 
-    
-    
+
+
     }
   .header .top-panel span {
     padding-left: 20px; }
@@ -300,18 +300,18 @@ textarea::-webkit-input-placeholder {
   .header .top-panel .call-box .order-call, .header .top-panel .network-box .order-call, .header .top-panel .mailto .order-call {
     text-decoration: underline;
     margin-left: 15px; }
-	
+
 	.header .top-panel .call-box .order-call { background-color: #ff8c00; text-decoration: none; padding: 5px 10px; border-radius: 30px;
-	   vertical-align: 6px; 
+	   vertical-align: 6px;
 	}
-	
+
     .header .top-panel .call-box .order-call:hover, .header .top-panel .network-box .order-call:hover, .header .top-panel .mailto .order-call:hover {
       text-decoration: none; }
 
 .header .top-panel .call-box { position: relative;
   margin-bottom: 0;
  padding-top: 0;
-  
+
    }
 
 .header .top-panel .mailto {
@@ -342,9 +342,9 @@ textarea::-webkit-input-placeholder {
     width: 100%; }
   .header .bottom-panel .shell-item .item {
     display: inline-block;
-    vertical-align: middle; 
+    vertical-align: middle;
             /*vertical-align: 10px;*/
-    
+
     }
 
 .header .bottom-panel .menu-top li {
@@ -378,7 +378,7 @@ textarea::-webkit-input-placeholder {
   top: 65%; }
 
   .menu-item-245 a {color: #FF8C00!important; font-weight: bold!important;}
-  
+
 .form-group {
   position: relative; }
   .form-group input[type=submit] {
@@ -522,7 +522,7 @@ input[type=search] {
       /*background: rgba(55, 61, 69, 0.6);*/ }
 
 .slider-main-page .btn {margin-bottom: 0;}
-	  
+
 .slick-dots {
   bottom: 95px; }
 
@@ -829,9 +829,9 @@ input[type=search] {
   width: 100%;
   overflow: hidden;
   margin: 10px 0; }
-.panel-list-goods ul { 
+.panel-list-goods ul {
   font-size: 0;
-} 
+}
   .panel-list-goods li {
     position: relative;
     display: inline-block;
@@ -937,7 +937,7 @@ input[type=search] {
 
 .alternative-goods-section {
   padding: 40px 0 25px 0; }
-  
+
 .goods-section .col-lg-6 {
 	position: relative;
 	text-align: center;
@@ -959,7 +959,7 @@ input[type=search] {
   padding-bottom: 70px; }
 .catalog-section .inset-box {
 	position: relative;
-	
+
 }
 .catalog-section .icon-action {
 	position: absolute;
@@ -1008,7 +1008,7 @@ input[type=search] {
       display: inline-block;
       text-transform: uppercase; }
     .catalog-section .filter-goods .list-category .superprice,
-    .catalog-section .filter-goods .list-category .selected_cat { 
+    .catalog-section .filter-goods .list-category .selected_cat {
       padding-left: 0; }
     .catalog-section .filter-goods .list-category .selected_cat a{
       position: relative;
@@ -1035,7 +1035,7 @@ input[type=search] {
       .catalog-section .filter-goods .list-category li a:hover, .catalog-section .filter-goods .list-category li a:active, .catalog-section .filter-goods .list-category li a:focus {
         color: #e59c44; }
       .catalog-section .filter-goods .list-category .superprice a:hover, .catalog-section .filter-goods .list-category .superprice a:active, .catalog-section .filter-goods .list-category .superprice a:focus,
-      .catalog-section .filter-goods .list-category .selected_cat a:hover, .catalog-section .filter-goods .list-category .selected_cat a:active, .catalog-section .filter-goods .list-category .selected_cat a:focus { 
+      .catalog-section .filter-goods .list-category .selected_cat a:hover, .catalog-section .filter-goods .list-category .selected_cat a:active, .catalog-section .filter-goods .list-category .selected_cat a:focus {
         color: #fff; }
     .catalog-section .filter-goods .list-category li > ul > li {
       padding-left: 25px; }
@@ -1214,7 +1214,7 @@ input[type=search] {
   -webkit-column-gap: 30px;
      -moz-column-gap: 30px;
           column-gap: 30px;*/ }
-		  
+
 		  .blog-section article .txt a, .about-section article .txt a, .production-section article .txt a {color: #000;}
 
 .blog-section article p,
@@ -1397,13 +1397,13 @@ input[type=search] {
   font-size: 15px;
   padding: 3px 8px 7px 8px;
   color: #fff;
-  font-weight: 600; 
+  font-weight: 600;
 background: #cc3300;  }
   .title_order_prod {
     font-size: 15px;
     margin: -30px 0 30px; }
   #popupSend_mess, #orderSend_mess { font-size: 16px; }
-  
+
 .contact-form {width: 500px; border-radius: 0; padding: 0; background: #fff;}
 .contact-form .contact-form-header {background-color: #373d45; color: #fff; text-align: center; font-size: 16px; font-weight: bold; padding: 7px 0;} .contact-form .contact-form-header p {margin: 0;}
 .contact-form .contact-form-title {font-size: 14px; background: #E7E7E7; padding: 15px 50px; color: #000; text-align: center;}
@@ -1427,7 +1427,7 @@ background: #cc3300;  }
       color: #e59c44;
       text-decoration: none; }
 
-      
+
 /*________PAGE .search-section________*/
 .search-section {
   padding-bottom: 80px; }
@@ -1525,4 +1525,53 @@ background: #cc3300;  }
 
 .slabs-table table tr td:last-child{
   font-weight: bold;
+}
+
+.tab-fx {
+  text-align: left;
+}
+
+.tab-fx h3 {
+    display: inline-block;
+    text-transform: uppercase;
+    font-family: "Ubuntu", sans-serif;
+    font-size: 20px;
+    color: #505050;
+    padding-top: 0;
+}
+
+.tab-fx .goods-available {
+    font-family: "Ubuntu", sans-serif;
+    font-size: 20px;
+    color: #505050;
+    margin-left: 51px;
+    display: inline-block;
+}
+
+.tab-fx-pic-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.tab-fx-pic-container img {
+    max-width: 93%;
+}
+
+.description-goods {
+    text-align: left;
+}
+
+.maybe-interesting {
+    display: flex;
+    justify-content: space-between;
+    background: #e8e8e8;
+    padding: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.maybe-interesting img {
+    height: 65px;
+    object-fit: cover;
+    width: 65px;
 }

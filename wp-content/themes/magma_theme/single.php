@@ -14,6 +14,22 @@
     <!--.goods-section-->
     <section class="goods-section">
         <div class="container">
+            <div class="maybe-interesting">
+                <?php
+                // задаем нужные нам критерии выборки данных из БД
+                $args = array(
+                    'posts_per_page' => 15,
+//                    'orderby' => 'comment_count'
+                );
+
+                $query = new WP_Query($args);
+
+                while ($query->have_posts()) {
+                    $query->the_post(); ?>
+                    <a href="<?= get_the_permalink(); ?>"><img src="<?= get_the_post_thumbnail_url(); ?>"></a>
+                <?php }
+                ?>
+            </div>
             <?php
             while (have_posts()) : the_post();
                 setPostViews(get_the_ID());
@@ -34,6 +50,28 @@
                             } ?>"></div><?php } ?>
                         </div>
                         <div class="col-lg-6 col-md-6">
+                            <?php
+                            $name = get_field('name_primer');
+                            $gal = get_field('full_desc');
+                            ?>
+                            <div class="tab tab-fx">
+                                <?php //if( $name ) { echo '<h3>'.$name.'</h3>'; } ?>
+                                <?php if ($gal) {
+                                    if(get_field('goods-available') == 1) {
+                                        $av = 'Нет';
+                                    } else {
+                                        $av = 'Да';
+                                    }
+
+                                    echo '<h3>Дополнительные изображения</h3>';
+                                    echo '<span class="goods-available">Наличие&nbsp;&nbsp;&nbsp;<img src="/wp-content/themes/magma_theme/img/goods-available-line.png">&nbsp;&nbsp;&nbsp;'. $av .'</span>';
+                                    echo ' <div class="tab-fx-pic-container">';
+                                    foreach ($gal as $item) {
+                                        echo '<div class="pic"><a href="' . $item['url'] . '" class="fancybox-button" rel="fancybox-button" ><img src="' . $item['sizes']['thumbnail'] . '" alt=""></a></div>';
+                                    }
+                                    echo '</div>';
+                                } ?>
+                            </div>
                             <div class="description-goods">
                                 <div class="text">
                                     <?php the_content(); ?>
@@ -89,12 +127,6 @@
                 <!--THIS tabs-->
 
 
-                <?php
-                $name = get_field('name_primer');
-                $gal = get_field('full_desc');
-                ?>
-
-
                 <!--.panel-list-goods-->
                 <div class="panel-list-goods nav-tabs">
                     <?php /* ?><ul>
@@ -106,15 +138,7 @@
 
                       <!--.main-container-tabs-->
                 <div class="main-container-tabs">
-                    <div class="tab">
-                        <?php //if( $name ) { echo '<h3>'.$name.'</h3>'; } ?>
-                        <?php if ($gal) {
-                            echo '<h3>Дополнительные изображения</h3>';
-                            foreach ($gal as $item) {
-                                echo '<div class="pic"><a href="' . $item['url'] . '" class="fancybox-button" rel="fancybox-button" ><img src="' . $item['sizes']['thumbnail'] . '" alt=""></a></div>';
-                            }
-                        } ?>
-                    </div>
+
                     <?php /* ?><div class="tab">
 					<h3>Дополнительная информация</h3>
 					<div class="view-attributes">

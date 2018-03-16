@@ -1,8 +1,15 @@
 # Created by .ignore support plugin (hsz.mobi)
 # Ignore everything
-*
+/wp-admin
+/wp-includes
+/wp-content/cache
+/wp-content/languages
+/wp-content/plugins
+/wp-content/upgrade
+/wp-content/uploads
 
 # But not these files...
 !.gitignore
-!wp-content/themes/magma_theme/
-!wp-content/themes/magma_theme/*
+#!wp-content/themes/magma_theme/css/
+#!wp-content/themes/magma_theme/
+#!wp-content/themes/magma_theme/*
