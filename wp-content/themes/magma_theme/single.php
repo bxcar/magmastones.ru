@@ -49,7 +49,7 @@
                                 echo 'background-image: url(\'/wp-content/themes/magma_theme/img/action.png\');';
                             } ?>"></div><?php } ?>
                         </div>
-                        <div class="col-lg-6 col-md-6">
+                        <div class="col-lg-6 col-md-6 col-md-6-fx">
                             <?php
                             $name = get_field('name_primer');
                             $gal = get_field('full_desc');

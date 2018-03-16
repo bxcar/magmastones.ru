@@ -1550,7 +1550,8 @@ background: #cc3300;  }
 
 .tab-fx-pic-container {
     display: flex;
-    justify-content: space-between;
+    /*justify-content: space-between;*/
+  justify-content: flex-start;
 }
 
 .tab-fx-pic-container img {
@@ -1564,6 +1565,7 @@ background: #cc3300;  }
 .maybe-interesting {
     display: flex;
     justify-content: space-between;
+  /*justify-content: flex-start;*/
     background: #e8e8e8;
     padding: 10px;
     margin-top: 20px;
@@ -1574,4 +1576,16 @@ background: #cc3300;  }
     height: 65px;
     object-fit: cover;
     width: 65px;
+}
+
+.description-goods .price,
+.description-goods .show_popup,
+.description-goods h1,
+.description-goods h2,
+.description-goods h3 {
+  display: none;
+}
+
+.col-md-6-fx {
+  margin-top: -5px;
 }

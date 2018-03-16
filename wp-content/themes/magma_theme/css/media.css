@@ -331,24 +331,3 @@
 /* Large Devices, Wide Screens */
 @media only screen and (min-width: 1200px) {
   /**/ }
-
-.tab-fx {
-  text-align: left;
-}
-
-.tab-fx h3 {
-  text-transform: uppercase;
-  font-family: "Ubuntu", sans-serif;
-  font-size: 20px;
-  color: #505050;
-  padding-top: 0;
-}
-
-.tab-fx-pic-container {
-  display: flex;
-  justify-content: space-between;
-}
-
-.tab-fx-pic-container img {
-  max-width: 93%;
-}
