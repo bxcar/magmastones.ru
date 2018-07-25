@@ -315,7 +315,7 @@ $(document).ready(function() {
 	/*filter form */
 	// cat filter
 	$('#filter_form #prod_category a').click(function(e) {
-		e.preventDefault();
+		// e.preventDefault();
 		if( $(this).parent().hasClass('selected_cat') ) {
 			$('#cat_filter').val('');
 		} else {

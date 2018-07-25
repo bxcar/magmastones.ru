@@ -660,4 +660,7 @@ add_action( 'carbon_register_fields', 'crb_register_custom_fields' );
 function crb_register_custom_fields() {
 	require_once __DIR__ . '/inc/carbon.php';
 }
+
+//Удаляем category из УРЛа категорий
+// add_filter('category_link', create_function('$a', 'return str_replace("category/", "", $a);'), 9999);
 ?>

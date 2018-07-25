@@ -142,7 +142,7 @@ $hc_file_time = filemtime($hc_file);
 if (0 && $hyper_cache_is_bot) {
     hyper_cache_header('hit - bot');
 } else {
-    if (12 > 0 && $hc_file_time < time() - (12 * 3600)) {
+    if (10 > 0 && $hc_file_time < time() - (10 * 3600)) {
         hyper_cache_header('continue - old file');
         return false;
     }
@@ -170,8 +170,8 @@ if (0) {
         $hc_cache_max_age = 24 * 3600;
     } else {
         // If there is not a default expire time, use 24 hours.
-        if (12 > 0) {
-            $hc_cache_max_age = time() + (12 * 3600) - $hc_file_time;
+        if (10 > 0) {
+            $hc_cache_max_age = time() + (10 * 3600) - $hc_file_time;
         } else {
             $hc_cache_max_age = time() + (24 * 3600) - $hc_file_time;
         }
@@ -208,7 +208,7 @@ function hyper_cache_sanitize_uri($uri) {
 }
 
 function hyper_cache_sanitize_host($host) {
-    $host = preg_replace('|[^a-zA-Z0-9\.]+|', '', $host);
+    $host = preg_replace('|[^a-zA-Z0-9\.\-]+|', '', $host);
     return strtolower($host);
 }
 

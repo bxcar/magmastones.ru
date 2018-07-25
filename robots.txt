@@ -27,5 +27,5 @@ User-agent: Yandex
  Disallow: */trackback
  Disallow: */feed
  Disallow: */comments
- Host: magmastones.ru
- Sitemap: http://magmastones.ru/sitemap.xml
+ Host: https://magmastones.ru
+ Sitemap: https://magmastones.ru/sitemap.xml

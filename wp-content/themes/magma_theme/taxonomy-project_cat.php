@@ -11,10 +11,10 @@
 	<!--.breadcrumb-section-->
 	<section class="breadcrumb-section">
 		<div class="container">
-			<nav class="breadcrumb" itemscope="" itemtype="http://schema.org/BreadcrumbList">
-				<a href="<?php echo home_url('/'); ?>" class="breadcrumb-item" itemtype="http://schema.org/ListItem" itemprop="item">Главная</a>
+			<nav class="breadcrumb" itemscope="" itemtype="https://schema.org/BreadcrumbList">
+				<a href="<?php echo home_url('/'); ?>" class="breadcrumb-item" itemtype="https://schema.org/ListItem" itemprop="item">Главная</a>
 				<sep class="kb_sep"> &gt;&gt; </sep>
-				<a href="<?php echo home_url(); ?>/proektyi/" class="breadcrumb-item" itemtype="http://schema.org/ListItem" itemprop="item">Проекты</a>
+				<a href="<?php echo home_url(); ?>/proektyi/" class="breadcrumb-item" itemtype="https://schema.org/ListItem" itemprop="item">Проекты</a>
 				<sep class="kb_sep"> &gt;&gt; </sep>
 				<span class="kb_title breadcrumb-item active"><?php single_term_title(); ?></span>
 			</nav>

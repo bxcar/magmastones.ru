@@ -6,12 +6,12 @@
 ?>
 
 	<!--.pre-header-->
-	<section class="pre-header" style="background-image: url(<?php echo get_field('banner'); ?>);">
+	<section class="pre-header" style="background-image: url(<?php echo get_field('banner'); ?>); background-size: 100% 389px;">
 		<div class="container">
 			<?php if( get_field('text_banner') ) {
-				echo '<div class="view-title">';
+				/*echo '<div class="view-title">';
 					echo '<h1>'.get_field('text_banner').'</h1>';
-				echo '</div>';
+				echo '</div>';*/
 			} ?>
 		</div>
 	</section><!--.pre-header-->
@@ -95,7 +95,7 @@
 											}
 										}
 
-										if( $price ) { echo '<div class="price-goods">'.$price.' руб.</div>'; } 
+										if( $price ) { /*echo '<div class="price-goods">'.$price.' руб.</div>';*/ }
 									?>
 								</div>
 								<div class="more-inform-product"><a href="<?php the_permalink(); ?>" class="btn">подробнее</a></div>

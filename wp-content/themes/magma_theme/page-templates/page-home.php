@@ -148,7 +148,7 @@
 											}
 										}
 
-							if( $price ) { echo '<div class="price-goods">'.$price.' руб.</div>'; } 
+							if( $price ) { /*echo '<div class="price-goods">'.$price.' руб.</div>';*/ } 
 						?>
 					</div>
 					<div class="more-inform-product"><a href="<?php the_permalink(); ?>" class="btn">подробнее</a></div>

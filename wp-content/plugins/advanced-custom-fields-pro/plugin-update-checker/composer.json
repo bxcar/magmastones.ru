@@ -1,0 +1,18 @@
+{
+	"name": "woocommerce-product-addon",
+	"type": "library",
+	"description": "",
+	"keywords": ["wordpress", "woocommerce", "product addons"],
+	"homepage": "http://woothemes.com/products/",
+	"license": "MIT",
+	"authors": [
+		{
+			"name": "WooThemes",
+			"homepage": "http://woothemes.com",
+			"role": "Developer"
+		}
+	],
+	"require": {
+		"php": ">=5.2.0"
+	}
+}

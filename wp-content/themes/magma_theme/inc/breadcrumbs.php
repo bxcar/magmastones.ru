@@ -86,14 +86,14 @@ class Kama_Breadcrumbs {
 			);
 			// rdf
 			elseif( $mark === 'rdf.data-vocabulary.org' ) $mark = array(
-				'wrappatt'   => '<nav class="breadcrumb" prefix="v: http://rdf.data-vocabulary.org/#">%s</nav>',
+				'wrappatt'   => '<nav class="breadcrumb" prefix="v: https://rdf.data-vocabulary.org/#">%s</nav>',
 				'linkpatt'   => '<a href="%s" rel="v:url" property="v:title">%s</a>',
 				'sep_after'  => '', // закрываем span после разделителя!
 			);
 			// schema.org
 			elseif( $mark === 'schema.org' ) $mark = array(
-				'wrappatt'   => '<nav class="breadcrumb" itemscope itemtype="http://schema.org/BreadcrumbList">%s</nav>',
-				'linkpatt'   => '<a href="%s" class="breadcrumb-item" itemtype="http://schema.org/ListItem" itemprop="item">%s</a>',
+				'wrappatt'   => '<nav class="breadcrumb" itemscope itemtype="https://schema.org/BreadcrumbList">%s</nav>',
+				'linkpatt'   => '<a href="%s" class="breadcrumb-item" itemtype="https://schema.org/ListItem" itemprop="item">%s</a>',
 				'sep_after'  => '',
 			);
 

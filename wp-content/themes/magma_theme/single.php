@@ -1,6 +1,17 @@
 <?php get_header(); ?>
 
 
+<?php 
+global $post;
+$postcat = get_the_category( $post->ID );
+
+// try print_r($postcat) ;  
+
+/*if ( ! empty( $postcat ) ) {
+    echo esc_html( $postcat[0]->name );   
+}*/
+?>
+
     <!--.breadcrumb-section-->
 <?php if (function_exists('kama_breadcrumbs') && !is_front_page()) { ?>
     <section class="breadcrumb-section">
@@ -8,6 +19,12 @@
             <?php echo kama_breadcrumbs(' >> '); ?>
         </div>
     </section>
+    <script>
+        // jQuery(".breadcrumb a:contains('')").css('display', 'none');
+        jQuery('.breadcrumb a[href*="category"]').each(function() {
+            jQuery(this).attr("href", "<?php echo get_category_link($postcat[0]->cat_ID); ?>");
+        });
+    </script>
 <?php } ?><!--End .breadcrumb-section-->
 
 
@@ -16,9 +33,19 @@
         <div class="container">
             <div class="maybe-interesting">
                 <?php
+                $terms = get_the_terms( $post->ID, 'type_color');
+                $term = array_shift( $terms );
+    			// echo $term->slug;
                 // задаем нужные нам критерии выборки данных из БД
                 $args = array(
                     'posts_per_page' => 15,
+                    'tax_query' => array(
+							        array (
+							            'taxonomy' => 'type_color',
+							            'field' => 'slug',
+							            'terms' => $term->slug,
+							        )
+							    ),
 //                    'orderby' => 'comment_count'
                 );
 
@@ -43,7 +70,8 @@
                     <div class="row">
                         <div class="col-lg-6 col-md-6">
                             <!--<div class="foto" style="background-image: url(<?php echo $thumb_url[0]; ?>)"></div>-->
-                            <img src="<?php echo $thumb_url[0]; ?>" class="foto">
+                            <a href="<?php echo $thumb_url[0]; ?>" class="fancybox-button" rel="fancybox-button"><img style="width: 555px; height: 400px;" src="<?php echo $thumb_url[0]; ?>" alt=""></a>
+                            <!-- <img src="<?php //echo $thumb_url[0]; ?>" class="foto"> -->
                             <?php if (get_field('action')) { ?>
                             <div class="icon-action" style="<?php if (get_field('action') == 'action') {
                                 echo 'background-image: url(\'/wp-content/themes/magma_theme/img/action.png\');';
@@ -64,7 +92,7 @@
                                     }
 
                                     echo '<h3>Дополнительные изображения</h3>';
-                                    echo '<span class="goods-available">Наличие&nbsp;&nbsp;&nbsp;<img src="/wp-content/themes/magma_theme/img/goods-available-line.png">&nbsp;&nbsp;&nbsp;'. $av .'</span>';
+                                    echo '<span style="display: none;" class="goods-available">Наличие&nbsp;&nbsp;&nbsp;<img src="/wp-content/themes/magma_theme/img/goods-available-line.png">&nbsp;&nbsp;&nbsp;'. $av .'</span>';
                                     echo ' <div class="tab-fx-pic-container">';
                                     foreach ($gal as $item) {
                                         echo '<div class="pic"><a href="' . $item['url'] . '" class="fancybox-button" rel="fancybox-button" ><img src="' . $item['sizes']['thumbnail'] . '" alt=""></a></div>';
@@ -107,10 +135,10 @@
                 <?php if (get_field('slab')) { ?>
                     <div class="slabs-table">
                         <table>
-                            <caption>Слэбы</caption>
+                            <!-- <caption>Слэбы</caption> -->
                             <tr>
                                 <th>Название</th>
-                                <th>Размер слэба</th>
+                                <th>Размер</th>
                                 <th>Цена</th>
                             </tr>
                             <?php foreach (get_field('slab') as $slab) { ?>
@@ -282,7 +310,7 @@ if ($categories) {
                                 }
 
                                 if ($price) {
-                                    echo '<div class="price-goods">' . $price . ' руб.</div>';
+                                    //echo '<div class="price-goods">' . $price . ' руб.</div>';
                                 }
                                 ?>
                             </div>

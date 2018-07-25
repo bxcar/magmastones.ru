@@ -45,7 +45,7 @@
 						<?php if( get_field('page_filter', 'option') ) { ?>
 							<form action="<?php echo get_field('page_filter', 'option'); ?>" id="filter_form" method="GET">
 								<div class="item">
-									<div class="list-category" id="prod_category">
+									<div class="list-category" id="prod_category1">
 										<h4>Каталог камня</h4>
 										<?php
 										if ($_GET['cat_filter'] != '') {
@@ -55,15 +55,16 @@
 											$parentCat = get_category($parent,false);
 
 											echo '<ul>'; 
+											// javascript: void(0)
 											if( $parent != '' ) { ?>
-												<li><a href="javascript: void(0)" data-catID="<?php echo $parentCat->term_id; ?>"><?php echo $parentCat->name; ?> <?php (int)count_filter(); ?></a>
+												<li><a href="<?php echo get_category_link($parentCat->term_id); ?>" data-catID="<?php echo $parentCat->term_id; ?>"><?php echo $parentCat->name; ?> &nbsp;<?php //(int)count_filter(); ?></a>
 													<ul>
-														<li class=" selected_cat"><a href="javascript: void(0)"><?php echo $thisCat->name; ?> <?php (int)count_filter(); ?></a></li>
+														<li class=" selected_cat"><a href="javascript: void(0)"><?php echo $thisCat->name; ?> &nbsp;<?php //(int)count_filter(); ?></a></li>
 													</ul>
 												</li>
 											<?php } else {
 											?>
-												<li class=" selected_cat"><a href="javascript: void(0)"><?php echo $thisCat->name; ?> <?php (int)count_filter(); ?></a></li>
+												<li class=" selected_cat"><a href="javascript: void(0)"><?php echo $thisCat->name; ?> &nbsp;<?php //(int)count_filter(); ?></a></li>
 											<?php }
 												echo '</ul>';
 										} else {
@@ -74,7 +75,7 @@
 											'menu_class'      => '', 
 											'fallback_cb'     => '__return_empty_string',
 											'depth'           => 2,
-											'walker'=> new Filter(),
+											// 'walker'=> new Filter(),
 										  ) );
 										}
 										?>
@@ -388,7 +389,7 @@
 											}
 										}
 
-										if( $price ) { echo '<div class="price-goods">'.$price.' руб.</div>'; } 
+										if( $price ) { /*echo '<div class="price-goods">'.$price.' руб.</div>';*/ } 
 									?>
 								</div>
 								<div class="more-inform-product"><a href="<?php the_permalink(); ?>" class="btn">подробнее</a></div>
