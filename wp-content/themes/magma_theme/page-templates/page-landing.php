@@ -15,7 +15,10 @@ get_header();
 
 
     <div class="land-block container">
-        <h2 class="land-block__title">Столешницы</h2>
+        <h2 class="land-block__title land-block__title-desktop">Столешницы</h2>
+        <div class="land-block__title-mob">
+            <h2 class="land-block__title">Столешницы</h2>
+        </div>
         <div class="land-block__top-part">
             <div class="land-block__top-part-item">
                 <img src="<?= get_template_directory_uri(); ?>/img/land-main-img.png" class="land-block__main-img">
@@ -43,7 +46,7 @@ get_header();
             <div class="land-block__top-part-item">
                 <span class="land-block__top-part-price">8999 руб*</span>
                 <span class="land-block__top-part-price-subtext1">цена указана за изделие из материала<br>Крема Марфил Элегант</span>
-                <span class="land-block__top-part-price-subtext2">Мотаж изделия</span>
+                <span class="land-block__top-part-price-subtext2">Монтаж изделия</span>
                 <span class="land-block__top-part-price-subtext3">5000 руб/пог.метр</span>
             </div>
         </div>
@@ -140,7 +143,7 @@ get_header();
                 <span class="land-block__bottom-part-top-item">Замер (при заказе) - <span>Бесплатно</span></span>
                 <span class="land-block__bottom-part-top-item">Доставка по Москве (до подъезда) - <span>Бесплатно</span></span>
             </div>
-            <div class="land-block__bottom-part-bottom">
+            <div class="land-block__bottom-part-bottom land-block__bottom-part-bottom--desktop">
                 <img src="<?= get_template_directory_uri(); ?>/img/land-gallery-img.png"
                      class="land-block__bottom-part-bottom-img">
                 <img src="<?= get_template_directory_uri(); ?>/img/land-gallery-img.png"
@@ -149,12 +152,29 @@ get_header();
                      class="land-block__bottom-part-bottom-img">
                 <img src="<?= get_template_directory_uri(); ?>/img/land-gallery-img.png"
                      class="land-block__bottom-part-bottom-img">
+            </div>
+            <div class="land-block__bottom-part-bottom land-block__bottom-part-bottom--mob">
+                <div class="land-block__bottom-part-bottom-img-wrapper">
+                    <img src="<?= get_template_directory_uri(); ?>/img/land-gallery-img.png"
+                         class="land-block__bottom-part-bottom-img">
+                    <img src="<?= get_template_directory_uri(); ?>/img/land-gallery-img.png"
+                         class="land-block__bottom-part-bottom-img">
+                </div>
+                <div class="land-block__bottom-part-bottom-img-wrapper">
+                    <img src="<?= get_template_directory_uri(); ?>/img/land-gallery-img.png"
+                         class="land-block__bottom-part-bottom-img">
+                    <img src="<?= get_template_directory_uri(); ?>/img/land-gallery-img.png"
+                         class="land-block__bottom-part-bottom-img">
+                </div>
             </div>
         </div>
     </div>
 
     <div class="land-block container">
-        <h2 class="land-block__title">Ступени</h2>
+        <h2 class="land-block__title land-block__title-desktop">Ступени</h2>
+        <div class="land-block__title-mob">
+            <h2 class="land-block__title">Ступени</h2>
+        </div>
         <div class="land-block__top-part">
             <div class="land-block__top-part-item">
                 <img src="<?= get_template_directory_uri(); ?>/img/land-main-img.png" class="land-block__main-img">
@@ -182,7 +202,7 @@ get_header();
             <div class="land-block__top-part-item">
                 <span class="land-block__top-part-price">8999 руб*</span>
                 <span class="land-block__top-part-price-subtext1">цена указана за изделие из материала<br>Крема Марфил Элегант</span>
-                <span class="land-block__top-part-price-subtext2">Мотаж изделия</span>
+                <span class="land-block__top-part-price-subtext2">Монтаж изделия</span>
                 <span class="land-block__top-part-price-subtext3">5000 руб/пог.метр</span>
             </div>
         </div>
@@ -279,7 +299,7 @@ get_header();
                 <span class="land-block__bottom-part-top-item">Замер (при заказе) - <span>Бесплатно</span></span>
                 <span class="land-block__bottom-part-top-item">Доставка по Москве (до подъезда) - <span>Бесплатно</span></span>
             </div>
-            <div class="land-block__bottom-part-bottom">
+            <div class="land-block__bottom-part-bottom land-block__bottom-part-bottom--desktop">
                 <img src="<?= get_template_directory_uri(); ?>/img/land-gallery-img.png"
                      class="land-block__bottom-part-bottom-img">
                 <img src="<?= get_template_directory_uri(); ?>/img/land-gallery-img.png"
@@ -288,12 +308,29 @@ get_header();
                      class="land-block__bottom-part-bottom-img">
                 <img src="<?= get_template_directory_uri(); ?>/img/land-gallery-img.png"
                      class="land-block__bottom-part-bottom-img">
+            </div>
+            <div class="land-block__bottom-part-bottom land-block__bottom-part-bottom--mob">
+                <div class="land-block__bottom-part-bottom-img-wrapper">
+                    <img src="<?= get_template_directory_uri(); ?>/img/land-gallery-img.png"
+                         class="land-block__bottom-part-bottom-img">
+                    <img src="<?= get_template_directory_uri(); ?>/img/land-gallery-img.png"
+                         class="land-block__bottom-part-bottom-img">
+                </div>
+                <div class="land-block__bottom-part-bottom-img-wrapper">
+                    <img src="<?= get_template_directory_uri(); ?>/img/land-gallery-img.png"
+                         class="land-block__bottom-part-bottom-img">
+                    <img src="<?= get_template_directory_uri(); ?>/img/land-gallery-img.png"
+                         class="land-block__bottom-part-bottom-img">
+                </div>
             </div>
         </div>
     </div>
 
     <div class="land-block container">
-        <h2 class="land-block__title">Подоконники</h2>
+        <h2 class="land-block__title land-block__title-desktop">Подоконники</h2>
+        <div class="land-block__title-mob">
+            <h2 class="land-block__title">Подоконники</h2>
+        </div>
         <div class="land-block__top-part">
             <div class="land-block__top-part-item">
                 <img src="<?= get_template_directory_uri(); ?>/img/land-main-img.png" class="land-block__main-img">
@@ -321,7 +358,7 @@ get_header();
             <div class="land-block__top-part-item">
                 <span class="land-block__top-part-price">8999 руб*</span>
                 <span class="land-block__top-part-price-subtext1">цена указана за изделие из материала<br>Крема Марфил Элегант</span>
-                <span class="land-block__top-part-price-subtext2">Мотаж изделия</span>
+                <span class="land-block__top-part-price-subtext2">Монтаж изделия</span>
                 <span class="land-block__top-part-price-subtext3">5000 руб/пог.метр</span>
             </div>
         </div>
@@ -418,7 +455,7 @@ get_header();
                 <span class="land-block__bottom-part-top-item">Замер (при заказе) - <span>Бесплатно</span></span>
                 <span class="land-block__bottom-part-top-item">Доставка по Москве (до подъезда) - <span>Бесплатно</span></span>
             </div>
-            <div class="land-block__bottom-part-bottom">
+            <div class="land-block__bottom-part-bottom land-block__bottom-part-bottom--desktop">
                 <img src="<?= get_template_directory_uri(); ?>/img/land-gallery-img.png"
                      class="land-block__bottom-part-bottom-img">
                 <img src="<?= get_template_directory_uri(); ?>/img/land-gallery-img.png"
@@ -428,8 +465,23 @@ get_header();
                 <img src="<?= get_template_directory_uri(); ?>/img/land-gallery-img.png"
                      class="land-block__bottom-part-bottom-img">
             </div>
+            <div class="land-block__bottom-part-bottom land-block__bottom-part-bottom--mob">
+                <div class="land-block__bottom-part-bottom-img-wrapper">
+                    <img src="<?= get_template_directory_uri(); ?>/img/land-gallery-img.png"
+                         class="land-block__bottom-part-bottom-img">
+                    <img src="<?= get_template_directory_uri(); ?>/img/land-gallery-img.png"
+                         class="land-block__bottom-part-bottom-img">
+                </div>
+                <div class="land-block__bottom-part-bottom-img-wrapper">
+                    <img src="<?= get_template_directory_uri(); ?>/img/land-gallery-img.png"
+                         class="land-block__bottom-part-bottom-img">
+                    <img src="<?= get_template_directory_uri(); ?>/img/land-gallery-img.png"
+                         class="land-block__bottom-part-bottom-img">
+                </div>
+            </div>
         </div>
     </div>
+
 
 
 <?php get_footer(); ?>
