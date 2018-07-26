@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i&subset=latin-ext');
+
 body input:focus:required:invalid,
 body textarea:focus:required:invalid {
   color: #666; }
@@ -1645,3 +1647,142 @@ background: #cc3300;  }
 .cat-desc p:last-child {
   margin-bottom: 0;
 }
+
+/*land*/
+.land-block__title {
+  font-family: "Lato Heavy", sans-serif;
+  color: #fff;
+  font-size: 36px;
+  line-height: 53px;
+  background-color: #eaa855;
+  display: inline-block;
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-left: 30px;
+  padding-right: 35px;
+  margin-bottom: 40px;
+  margin-top: 15px;
+}
+
+.land-block__top-part {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.land-block__main-img {
+  min-width: 438px;
+}
+
+.land-block__top-part-title {
+  font-family: "Lato Heavy", sans-serif;
+  color: #484848;
+  font-size: 25px;
+  line-height: 1em;
+  white-space: nowrap;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  display: inline-block;
+  text-transform: uppercase;
+}
+
+.land-block__top-part-item:first-child {
+  margin-right: 30px;
+}
+
+.land-block__top-part-item:nth-child(2) {
+  margin-right: 24px;
+}
+
+.land-block__top-part-subimg-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.land-block__top-part-subimg {
+  margin-right: 30px;
+  text-align: center;
+}
+
+.land-block__top-part-subimg-img {
+  min-width: 82px;
+}
+
+.land-block__top-part-subimg-title {
+  font-family: "Lato Heavy", sans-serif;
+  color: #484848;
+  font-size: 30px;
+  line-height: 1em;
+  margin-bottom: 7px;
+  display: inline-block;
+}
+
+.land-block__top-part-item:nth-child(3) {
+  display: flex;
+  flex-direction: column;
+}
+
+.land-block__top-part-price {
+  position: relative;
+  font-family: "Lato Heavy", sans-serif;
+  color: #484848;
+  font-size: 47px;
+  line-height: 1em;
+  text-transform: uppercase;
+  margin-bottom: 5px;
+  padding-left: 40px;
+  white-space: nowrap;
+}
+
+.land-block__top-part-price::before {
+  content: "";
+  width: 27px;
+  position: absolute;
+  transform: translate(0, -50%);
+  top: 50%;
+  left: 0;
+  border-top: 14px solid #eaa855;
+}
+
+.land-block__top-part-price-subtext1 {
+  font-family: "Lato Light", sans-serif;
+  color: #484848;
+  font-size: 14px;
+  line-height: 1.2em;
+  white-space: nowrap;
+  margin-bottom: 30px;
+}
+
+.land-block__top-part-price-subtext2,
+.land-block__top-part-price-subtext3 {
+  font-family: "Lato Heavy", sans-serif;
+  color: #484848;
+  font-size: 22px;
+  line-height: 1em;
+  white-space: nowrap;
+  text-transform: uppercase;
+  display: inline-block;
+}
+
+.land-block__top-part-price-subtext2 {
+  margin-bottom: 9px;
+}
+
+.land-block__top-part-price-subtext3 {
+  position: relative;
+  padding-left: 25px;
+}
+
+.land-block__top-part-price-subtext3::before {
+  content: "";
+  width: 10px;
+  position: absolute;
+  transform: translate(0, -50%);
+  top: 50%;
+  left: 0;
+  border-top: 5px solid #eaa855;
+}
+
+
+/* //land*/
